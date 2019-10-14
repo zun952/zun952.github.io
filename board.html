@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>퇴근하겠습니다</title>
+	<script src="script/jquery-1.12.4.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/board_style.css">
+</head>
+<body>
+<div id="wrap">
+	<div id="header" include-html="nav_top.html">
+		<div class="logo_wrap">
+			<a href="board.html" class="logo"><img src="img/퇴근하겠습니다_main.png" alt="퇴근"></a>
+		</div>
+		<ul class="nav_top">
+		<li class="free_board on">
+			<a href="#"><span class="txt">자유게시판</span></a>
+		</li>
+		<li class="free_board">
+			<a href="#"><span class="txt">유머게시판</span></a>
+		</li>
+		<li class="free_board">
+			<a href="#"><span class="txt">드라마게시판</span></a>
+		</li>
+		<li class="free_board">
+			<a href="#"><span class="txt">영화게시판</span></a>
+		</li>
+		<li class="free_board">
+			<a href="#"><span class="txt">만화게시판</span></a>
+		</li>
+		<li class="free_board">
+			<a href="#"><span class="txt">게임게시판</span></a>
+		</li>
+		</ul>
+	</div>
+	<!-- container -->
+	<div id="container">
+		<div id="aside">
+			<div class="nav_box">
+				<p class="tit col_blue bold">주간 인기 글</p>
+				<ul class="nav_list">
+				<li><a href="#">1. 내일 뭐먹지?</a></li>
+				<li><a href="#">2. 삼시세끼</a></li>
+				<li><a href="#">3. 아이슬란드 간 세끼</a></li>
+				<li><a href="#">4. 워크맨</a></li>
+				<li><a href="#">5. 신서유기5</a></li>
+				<li><a href="#">6. 아는형님</a></li>
+				<li><a href="#">7. 꽃보다청춘</a></li>
+				</ul>
+			</div>
+			<div class="nav_box">
+				<p class="tit col_red bold">주간 인기 주제</p>
+				<ul class="nav_list">
+				<li><a href="#">1. 드라마</a></li>
+				<li><a href="#">2. 자유</a></li>
+				<li><a href="#">3. 유머</a></li>
+				<li><a href="#">4. 게임</a></li>
+				<li><a href="#">5. 영화</a></li>
+				<li><a href="#">6. 만화</a></li>
+				</ul>
+			</div>
+			<div class="nav_box_copy">
+				<p class="tit">대충 광고가 있다는 영역</p>
+			</div>
+		</div>
+		<!-- content -->
+		<div class="content">
+			<!-- section -->
+			<div class="section">
+				<!-- body -->
+				<div class="body">
+					<div class="field_box">
+						<div class="field_right">
+							<input type="text" placeholder="검색어를 입력하세요." style="width:300px">
+							<a href="board.html" class="search"><img src="img/search.png" alt="검색"></a>
+							<a href="#" class="search"><img src="img/write.png" alt="쓰기"></a>
+						</div>
+					</div>
+					<!-- tbl_wrap -->
+					<div class="tbl_wrap list">
+						<table id="listBox">
+						<colgroup>
+							<col style="width:35px"><col style="width:300px"><col style="width:80px"><col style="width:80px"><col style="width:50px">
+							<col style="width:35px">
+						</colgroup>
+						<thead>
+						<tr class="cent">
+							<th scope="col"><div class="td_inr">No</div></th>
+							<th scope="col"><div class="td_inr">제목</div></th>
+							<th scope="col"><div class="td_inr">작성자</div></th>
+							<th scope="col"><div class="td_inr">작성일</div></th>
+							<th scope="col"><div class="td_inr">추천수</div></th>
+							<th scope="col"><div class="td_inr"></div></th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr class="pointer">
+							<td><div class="td_inr cent">1499</div></td>	
+							<td><div class="td_inr left">프로젝트 오픈 보름 전 휴가갔다온 후기<span class="col_blue">[47]</span></div></td>	
+							<td><div class="td_inr cent">영석이</div></td>
+							<td><div class="td_inr cent">2019-10-15</div></td>
+							<td class="grt_cnt cent"><div class="td_inr">1234</div></td>
+							<td class="grt cent"><img src="img/greate.png" alt="추천"></td>
+						</tr>
+						</tbody>
+						</table>
+					</div>
+					<!-- //tbl_wrap -->
+					<!-- paging -->
+					<div class="paging_wrap">
+						<div class="area">
+							<p class="page_txt">전체 1499건 중 1~20개</p>
+						</div>
+						<div class="area">
+							<ul class="paging right">
+							<li class="page_prev">
+								<button type="button" class="btn_page"><span class="ico_arrow prev"><</span></button>
+							</li>
+							<li class="page_item on">
+								<button type="button" class="btn_page">1</button>
+							</li>
+							<li class="page_item">
+								<button type="button" class="btn_page">2</button>
+							</li>
+							<li class="page_item">
+								<button type="button" class="btn_page">3</button>
+							</li>
+							<li class="page_item">
+								<button type="button" class="btn_page">4</button>
+							</li>
+							<li class="page_item">
+								<button type="button" class="btn_page">5</button>
+							</li>
+							<li class="page_item">
+								<button type="button" class="btn_page">6</button>
+							</li>
+							<li class="page_item">
+								<button type="button" class="btn_page">7</button>
+							</li>
+							<li class="page_item">
+								<button type="button" class="btn_page">8</button>
+							</li>
+							<li class="page_item">
+								<button type="button" class="btn_page">9</button>
+							</li>
+							<li class="page_item">
+								<button type="button" class="btn_page">10</button>
+							</li>
+							<li class="page_next">
+								<button type="button" class="btn_page"><span class="ico_arrow next">></span></button>
+							</li>
+							</ul>
+						</div>
+					</div>
+					<!-- //paging -->
+				</div>
+				<!-- //body -->
+			</div>
+			<!-- //section -->
+		</div>
+		<!-- //content -->
+	</div>
+	<!-- //container -->
+</div>
+<script>
+$(document).ready(function(){
+
+	$('.nav_top li,.page_item').on('click', function() {
+		var $this = $(this);
+		$this.parents('ul').find('li').removeClass('on');
+		$this.addClass('on');
+	});
+	
+	var html = '';
+	for(var i = 1; i <= 20; i++) {
+		html += '<tr class="pointer">';
+		html += '	<td><div class="td_inr cent">'+ (1499 - i) +'</div></td>';
+		html += '	<td><div class="td_inr left">프로젝트 오픈 보름 전 휴가갔다온 후기<span class="col_blue">[47]</span></div></td>';
+		html += '	<td><div class="td_inr cent">영석이</div></td>';
+		html += '	<td><div class="td_inr cent">2019-10-15</div></td>';
+		html += '	<td class="grt_cnt cent"><div class="td_inr">'+ (12 * i) +'</div></td>';
+		html += ' 	<td class="grt cent"><img src="img/greate.png" alt="추천"></td>'
+		html += '</tr>';
+	}
+	$('#listBox > tbody').append(html);
+	
+	$('.grt').on('click', function() {
+		var $cntTd = $(this).closest('tr').find('.grt_cnt');
+		$cntTd.text(parseInt($cntTd.text()) + 1);
+	});
+	
+	$('#listBox .pointer td:not(.grt)').on('click', function() {
+		window.location.href="boardView.html";
+	});
+	//nav load
+	//$("#header").load("nav_top.html");
+	//$("#aside").load("nav_left.html");
+	//$("#footer").load("footer.html");
+});
+</script>
+</body>
+</html>

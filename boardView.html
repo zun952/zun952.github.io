@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>퇴근하겠습니다</title>
+	<script src="script/jquery-1.12.4.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/board_style.css">
+</head>
+<body>
+<div id="wrap">
+	<div id="header" include-html="nav_top.html">
+		<div class="logo_wrap">
+			<a href="board.html" class="logo"><img src="img/퇴근하겠습니다_main.png" alt="퇴근"></a>
+		</div>
+		<ul class="nav_top">
+		<li class="free_board on">
+			<a href="#"><span class="txt">자유게시판</span></a>
+		</li>
+		<li class="free_board">
+			<a href="#"><span class="txt">유머게시판</span></a>
+		</li>
+		<li class="free_board">
+			<a href="#"><span class="txt">드라마게시판</span></a>
+		</li>
+		<li class="free_board">
+			<a href="#"><span class="txt">영화게시판</span></a>
+		</li>
+		<li class="free_board">
+			<a href="#"><span class="txt">만화게시판</span></a>
+		</li>
+		<li class="free_board">
+			<a href="#"><span class="txt">게임게시판</span></a>
+		</li>
+		</ul>
+	</div>
+	<!-- container -->
+	<div id="container">
+		<div id="aside">
+			<div class="nav_box">
+				<p class="tit col_blue bold">주간 인기 글</p>
+				<ul class="nav_list">
+				<li><a href="#">1. 내일 뭐먹지?</a></li>
+				<li><a href="#">2. 삼시세끼</a></li>
+				<li><a href="#">3. 아이슬란드 간 세끼</a></li>
+				<li><a href="#">4. 워크맨</a></li>
+				<li><a href="#">5. 신서유기5</a></li>
+				<li><a href="#">6. 아는형님</a></li>
+				<li><a href="#">7. 꽃보다청춘</a></li>
+				</ul>
+			</div>
+			<div class="nav_box">
+				<p class="tit col_red bold">주간 인기 주제</p>
+				<ul class="nav_list">
+				<li><a href="#">1. 드라마</a></li>
+				<li><a href="#">2. 자유</a></li>
+				<li><a href="#">3. 유머</a></li>
+				<li><a href="#">4. 게임</a></li>
+				<li><a href="#">5. 영화</a></li>
+				<li><a href="#">6. 만화</a></li>
+				</ul>
+			</div>
+			<div class="nav_box_copy">
+				<p class="tit">대충 광고가 있다는 영역</p>
+			</div>
+		</div>
+		<!-- content -->
+		<div class="content">
+			<!-- section -->
+			<div class="section">
+				<!-- body -->
+				<div class="body">
+					<!-- tbl_wrap -->
+					<div class="tbl_wrap list">
+						<table>
+						<colgroup>
+							<col style="width:80px"><col style="width:200px"><col style="width:80px"><col style="width:200px">
+							<col style="width:50px"><col style="width:50px"><col style="width:50px"><col style="width:50px">
+						</colgroup>
+						<tbody>
+						<tr>
+							<th scope="row">제목</th>
+							<td class="bold" colspan="6">프로젝트 오픈 보름 전 휴가갔다온 후기<span class="col_blue">[47]</span></td>
+							<td class="grt big_grt cent pointer"><img src="img/greate.png" alt="추천"></td>
+						</tr>
+						<tr>
+							<th scope="row">등록자</th>
+							<td>영석이</td>
+							<th scope="row">등록일</th>
+							<td>2019-10-15</td>
+							<th class="cent" scope="row">조회수</th>
+							<td class="cent">4321</td>
+							<th class="cent" scope="row">추천수</th>
+							<td class="grt_cnt cent">1234</td>
+						</tr>
+						<tr>
+							<td class="board_centent" colspan="8" class="editor_wrap">
+								<p>노을이 아름다웠습니다..</p>
+								<p><img src="img/20190926_182328.jpg" style="height:400px"></p>
+								<p><img src="img/20190926_183307.jpg" style="height:400px"></p>
+							</td>
+						</tr>
+						</tbody>
+						</table>
+					</div>
+					<!-- //tbl_wrap -->
+					<div class="article notice_board">
+						<p class="sub_tit">댓글</p>
+						<ul class="comt_list">
+						<li>
+							<div class="comt_box">
+								<div class="user_info">
+									<input type="hidden" name="replyNo" value="${ r.replyNo }">
+									<input type="hidden" name="wrtLoginId" value="${ r.wrtLoginId }">
+									<span class="name">동민이</span>
+									<span class="date">2019-10-15 20:43:19</span>
+									<div class="edit_box on">
+										<button type="button" class="btn_base gray_rev small btn_edit"><span>수정</span></button>
+										<button type="button" class="btn_base gray_rev small btn_remove"><span>삭제</span></button>
+									</div>
+								</div>
+								<div class="comt_desc">
+									<p class="txt">푸하핫<p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="comt_box">
+								<div class="user_info">
+									<input type="hidden" name="replyNo" value="${ r.replyNo }">
+									<input type="hidden" name="wrtLoginId" value="${ r.wrtLoginId }">
+									<span class="name">동민이</span>
+									<span class="date">2019-10-15 20:45:26</span>
+									<div class="edit_box on">
+										<button type="button" class="btn_base gray_rev small btn_edit"><span>수정</span></button>
+										<button type="button" class="btn_base gray_rev small btn_remove"><span>삭제</span></button>
+									</div>
+								</div>
+								<div class="comt_desc">
+									<p class="txt">푸하하핫<p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="comt_box">
+								<div class="user_info">
+									<input type="hidden" name="replyNo" value="${ r.replyNo }">
+									<input type="hidden" name="wrtLoginId" value="${ r.wrtLoginId }">
+									<span class="name">동민이</span>
+									<span class="date">2019-10-15 20:47:38</span>
+									<div class="edit_box on">
+										<button type="button" class="btn_base gray_rev small btn_edit"><span>수정</span></button>
+										<button type="button" class="btn_base gray_rev small btn_remove"><span>삭제</span></button>
+									</div>
+								</div>
+								<div class="comt_desc">
+									<p class="txt">푸하하하핫<p>
+								</div>
+							</div>
+						</li>
+						</ul>
+					</div>
+					<div class="btn_wrap cent">
+						<button type="button" class="btn_base rev btn_history_back"><span>목록</span></button>
+					</div>
+				</div>
+				<!-- //body -->
+			</div>
+			<!-- //section -->
+		</div>
+		<!-- //content -->
+	</div>
+	<!-- //container -->
+</div>
+<script>
+$(document).ready(function(){
+
+	$('.nav_top li').on('click', function() {
+		var $this = $(this);
+		$this.parents('ul').find('li').removeClass('on');
+		$this.addClass('on');
+	});
+	
+	$('.grt').on('click', function() {
+		var $cntTd = $(this).closest('tbody').find('.grt_cnt');
+		$cntTd.text(parseInt($cntTd.text()) + 1);
+	});
+	
+	$('.btn_remove').on('click', function() {
+		$(this).parents('li').remove();
+	});
+	
+	$('.btn_history_back').on('click', function() {
+		//history.back();
+		location.href="board.html";
+	});
+	
+	//nav load
+	//$("#header").load("nav_top.html");
+	//$("#aside").load("nav_left.html");
+	//$("#footer").load("footer.html");
+});
+</script>
+</body>
+</html>
